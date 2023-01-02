@@ -1,0 +1,59 @@
+#@jwt = 
+
+#### USERS
+### Users create (signup)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Test name",
+  "email": "test@test.com",
+  "password": "password",
+  "password_confirmation": "password",
+  "image_url":
+}
+
+#### SESSIONS
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "p@example.com",
+  "password": "password"
+}
+
+#### TRAILS
+### Trails index
+GET http://localhost:3000/trails.json
+
+### Trails show 
+GET http://localhost:3000/trails/1.json
+
+### Trails create
+POST http://localhost:3000/trails.json
+Content-Type: application/json
+# Authorization: Bearer {{jwt}}
+
+{
+  "name": "Lake Isabelle",
+  "description": "Loop",
+  "length": 4.9,
+  "difficulty": "Easy",
+  "image_url": "public/F8C292B9-6CC1-478B-8DCD-43D74FEE21D9_1_105_c.jpeg"
+}
+
+### Trails update
+PATCH http://localhost:3000/trails/5.json
+Content-Type: application/json
+# Authorization: Bearer {{jwt}}
+
+{
+  "difficulty": "Easy/Moderate"
+}
+
+### Trails destroy
+DELETE http://localhost:3000/trails/4.json
+Content-Type: application/json
+# Authorization: Bearer {{jwt}}
+
