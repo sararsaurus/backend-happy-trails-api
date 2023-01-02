@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  before_action :authenticate_admin, except: [:index, :show, :create]
+
   def index
     @users = User.all
     render json: @users.as_json

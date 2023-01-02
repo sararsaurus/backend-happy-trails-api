@@ -1,4 +1,6 @@
 class TrailsController < ApplicationController
+  before_action :authenticate_admin, except: [:index, :show]
+
   def index
     @trails = Trail.all
     render json: @trails.as_json

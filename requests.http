@@ -1,4 +1,5 @@
 #@jwt = 
+#@admin = 
 
 #### USERS #### 
 ### Users index 
@@ -12,8 +13,8 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "Test name",
-  "email": "test@test.com",
+  "name": "Callam the Clueless",
+  "email": "c@example.com",
   "password": "password",
   "password_confirmation": "password",
   "image_url": "NO PIC!"
@@ -21,7 +22,7 @@ Content-Type: application/json
 
 ### Users destroy
 DELETE http://localhost:3000/users/5.json
-# Authorization: Bearer {{jwt}}
+# Authorization: Bearer {{admin}}
 
 #### SESSIONS #### 
 ### Sessions create (login)
@@ -43,7 +44,7 @@ GET http://localhost:3000/trails/1.json
 ### Trails create
 POST http://localhost:3000/trails.json
 Content-Type: application/json
-# Authorization: Bearer {{jwt}}
+# Authorization: Bearer {{admin}}
 
 {
   "name": "TESTY TEST",
@@ -56,7 +57,7 @@ Content-Type: application/json
 ### Trails update
 PATCH http://localhost:3000/trails/7.json
 Content-Type: application/json
-# Authorization: Bearer {{jwt}}
+# Authorization: Bearer {{admin}}
 
 {
   "difficulty": "Easy peasy lemon squeezy"
@@ -64,5 +65,5 @@ Content-Type: application/json
 
 ### Trails destroy
 DELETE http://localhost:3000/trails/7.json
-# Authorization: Bearer {{jwt}}
+# Authorization: Bearer {{admin}}
 
