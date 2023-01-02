@@ -1,6 +1,12 @@
 #@jwt = 
 
-#### USERS
+#### USERS #### 
+### Users index 
+GET http://localhost:3000/users.json
+
+### Users show
+GET http://localhost:3000/users/1.json
+
 ### Users create (signup)
 POST http://localhost:3000/users.json
 Content-Type: application/json
@@ -10,10 +16,14 @@ Content-Type: application/json
   "email": "test@test.com",
   "password": "password",
   "password_confirmation": "password",
-  "image_url":
+  "image_url": "NO PIC!"
 }
 
-#### SESSIONS
+### Users destroy
+DELETE http://localhost:3000/users/5.json
+# Authorization: Bearer {{jwt}}
+
+#### SESSIONS #### 
 ### Sessions create (login)
 POST http://localhost:3000/sessions.json
 Content-Type: application/json
@@ -23,7 +33,7 @@ Content-Type: application/json
   "password": "password"
 }
 
-#### TRAILS
+#### TRAILS #### 
 ### Trails index
 GET http://localhost:3000/trails.json
 
@@ -36,24 +46,23 @@ Content-Type: application/json
 # Authorization: Bearer {{jwt}}
 
 {
-  "name": "Lake Isabelle",
-  "description": "Loop",
-  "length": 4.9,
-  "difficulty": "Easy",
-  "image_url": "public/F8C292B9-6CC1-478B-8DCD-43D74FEE21D9_1_105_c.jpeg"
+  "name": "TESTY TEST",
+  "description": "Loopy",
+  "length": 3,
+  "difficulty": "Easy peasy",
+  "image_url": "NO PIC!"
 }
 
 ### Trails update
-PATCH http://localhost:3000/trails/5.json
+PATCH http://localhost:3000/trails/7.json
 Content-Type: application/json
 # Authorization: Bearer {{jwt}}
 
 {
-  "difficulty": "Easy/Moderate"
+  "difficulty": "Easy peasy lemon squeezy"
 }
 
 ### Trails destroy
-DELETE http://localhost:3000/trails/4.json
-Content-Type: application/json
+DELETE http://localhost:3000/trails/7.json
 # Authorization: Bearer {{jwt}}
 
