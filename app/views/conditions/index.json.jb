@@ -1,0 +1,6 @@
+@conditions.map do |condition|
+  {
+    id: condition.id,
+    url: condition_url(condition, format: :json)
+  }
+end

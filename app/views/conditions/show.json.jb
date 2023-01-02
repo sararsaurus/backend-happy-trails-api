@@ -1,0 +1,5 @@
+{
+  id: @condition.id,
+  created_at: @condition.created_at,
+  updated_at: @condition.updated_at
+}

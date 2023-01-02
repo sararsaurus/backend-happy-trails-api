@@ -1,0 +1,5 @@
+{
+  id: @fast_fact.id,
+  created_at: @fast_fact.created_at,
+  updated_at: @fast_fact.updated_at
+}

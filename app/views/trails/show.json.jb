@@ -1,0 +1,5 @@
+{
+  id: @trail.id,
+  created_at: @trail.created_at,
+  updated_at: @trail.updated_at
+}

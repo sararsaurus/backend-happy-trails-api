@@ -1,0 +1,6 @@
+@trails.map do |trail|
+  {
+    id: trail.id,
+    url: trail_url(trail, format: :json)
+  }
+end
