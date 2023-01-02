@@ -1,11 +1,16 @@
 ### CONDITIONS
+# Condition.create!(trail_condition: "Muddy", temp: 44, forecast: "Sunny in the morning with afternoon thunderstorms", sunrise_time: 0700, sunset_time: 1845, trail_id: 1)
+
+# Condition.create!(trail_condition: "Good condition", temp: 56, forecast: "Sunny all day", sunrise_time: 0600, sunset_time: 1945, trail_id: 2)
+
+# Condition.create!(trail_condition: "Icy", temp: 18, forecast: "Overcast with a chance of snow", sunrise_time: 0730, sunset_time: 1645, trail_id: 3)
 
 ### FAST FACTS
-Fast_Fact.create!(general: "Named after the Caribou Mountains in Alberta, Canada. This trail crosses the Continental Divide.", nearby_landmarks: "Lake Dorothy, Mount Neva, Mount Jasper, Diamond Lake", lake_info: "Elevation: 11,147 ft, Acres: 5.6, Depth: 8.2 ft, Fish: Cutthroat.", backcountry_zones: "Caribou, Neva", ecological_zones: "Subalpine, Alpine", trail_id: 1)
+# Fast_Fact.create!(general: "Named after the Caribou Mountains in Alberta, Canada. This trail crosses the Continental Divide.", nearby_landmarks: "Lake Dorothy, Mount Neva, Mount Jasper, Diamond Lake", lake_info: "Elevation: 11,147 ft, Acres: 5.6, Depth: 8.2 ft, Fish: Cutthroat.", backcountry_zones: "Caribou, Neva", ecological_zones: "Subalpine, Alpine", trail_id: 1)
 
-Fast_Fact.create!(general: "At 13,397 ft, it's one of IPW's seven 13ers. Nearby North Arapaho Peak is the highest in IPW and the Arapaho Glacier is the largest glacier in CO. The Fourth of July mine was so named because miners staked their claim there on Independence Day, 1872.", nearby_landmarks: "North Arapaho Peak, Arapaho Glacier, Fourth of July Mine", lake_info: "N/A", backcountry_zones: "Neva", ecological_zones: "Subalpine, Alpine", trail_id: 2)
+# Fast_Fact.create!(general: "At 13,397 ft, it's one of IPW's seven 13ers. Nearby North Arapaho Peak is the highest in IPW and the Arapaho Glacier is the largest glacier in CO. The Fourth of July mine was so named because miners staked their claim there on Independence Day, 1872.", nearby_landmarks: "North Arapaho Peak, Arapaho Glacier, Fourth of July Mine", lake_info: "N/A", backcountry_zones: "Neva", ecological_zones: "Subalpine, Alpine", trail_id: 2)
 
-Fast_Fact.create!(general: "Lone Eagle Peak's summit is at 11,946 ft.", nearby_landmarks: "The Chessmen", lake_info: "Elevation: 10,280 ft, Acres: 24.8, Depth: 78 ft, Fish: Brook, cutthroat.", backcountry_zones: "Cascade Creek, Crater Lake", ecological_zones: "Montane, Subalpine", trail_id: 3)
+# Fast_Fact.create!(general: "Lone Eagle Peak's summit is at 11,946 ft.", nearby_landmarks: "The Chessmen", lake_info: "Elevation: 10,280 ft, Acres: 24.8, Depth: 78 ft, Fish: Brook, cutthroat.", backcountry_zones: "Cascade Creek, Crater Lake", ecological_zones: "Montane, Subalpine", trail_id: 3)
 
 ### HIKE SCHEDULES
 
