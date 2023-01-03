@@ -1,5 +1,5 @@
 class Trail < ApplicationRecord
   has_many :conditions
   has_many :fast_facts
-  belongs_to :hike_schedule
+  has_many :hike_schedules
 end
