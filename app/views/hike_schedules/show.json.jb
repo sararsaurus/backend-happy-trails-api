@@ -1,0 +1,5 @@
+{
+  id: @hike_schedule.id,
+  created_at: @hike_schedule.created_at,
+  updated_at: @hike_schedule.updated_at
+}

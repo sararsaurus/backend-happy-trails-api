@@ -1,0 +1,6 @@
+@hike_schedules.map do |hike_schedule|
+  {
+    id: hike_schedule.id,
+    url: hike_schedule_url(hike_schedule, format: :json)
+  }
+end
