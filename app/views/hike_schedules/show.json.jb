@@ -1,5 +1,9 @@
 {
-  id: @hike_schedule.id,
-  created_at: @hike_schedule.created_at,
-  updated_at: @hike_schedule.updated_at
+  id: @hike_schedules.id,
+  trail_id: @hike_schedules.trail_id,
+  trail_name: @hike_schedules.trail.name,
+  user_id: @hike_schedules.user_id,
+  date: @hike_schedules.date,
+  conditions: @hike_schedules.trail.conditions,
+  fast_facts: @hike_schedules.trail.fast_facts
 }

@@ -1,6 +1,0 @@
-@fast_facts.map do |fast_fact|
-  {
-    id: fast_fact.id,
-    url: fast_fact_url(fast_fact, format: :json)
-  }
-end

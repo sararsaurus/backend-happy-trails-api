@@ -4,6 +4,12 @@ class HikeSchedulesController < ApplicationController
     render :index
   end
 
+  def show
+    @hike_schedules = current_user.hike_schedules.find_by(id: params[:id])
+    # render json: @hike_schedules.as_json
+    render :show
+  end
+
   def create
     hike_schedule = HikeSchedule.create!(
       trail_id: params[:trail_id],
