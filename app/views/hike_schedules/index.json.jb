@@ -2,6 +2,7 @@
   {
     id: hike_schedule.id,
     trail_id: hike_schedule.trail_id,
+    trail_name: hike_schedule.trail.name,
     user_id: hike_schedule.user_id,
     date: hike_schedule.date,
     conditions: hike_schedule.trail.conditions,

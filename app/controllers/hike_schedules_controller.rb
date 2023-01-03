@@ -1,7 +1,7 @@
 class HikeSchedulesController < ApplicationController
   def index
-    hike_schedules = current_user.hike_schedules.where(status: "saved")
-    render json: hike_schedules.as_json
+    @hike_schedules = current_user.hike_schedules.where(status: "saved")
+    render :index
   end
 
   def create
