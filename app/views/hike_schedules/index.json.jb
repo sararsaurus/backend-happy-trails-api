@@ -1,6 +1,10 @@
 @hike_schedules.map do |hike_schedule|
   {
     id: hike_schedule.id,
-    url: hike_schedule_url(hike_schedule, format: :json)
+    trail_id: hike_schedule.trail_id,
+    user_id: hike_schedule.user_id,
+    date: hike_schedule.date,
+    conditions: hike_schedule.trail.conditions,
+    fast_facts: hike_schedule.trail.fast_facts
   }
 end
