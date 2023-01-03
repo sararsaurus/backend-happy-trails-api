@@ -12,11 +12,12 @@
 
 # FastFact.create!(general: "Lone Eagle Peak's summit is at 11,946 ft.", nearby_landmarks: "The Chessmen", lake_info: "Elevation: 10,280 ft, Acres: 24.8, Depth: 78 ft, Fish: Brook, cutthroat.", backcountry_zones: "Cascade Creek, Crater Lake", ecological_zones: "Montane, Subalpine", trail_id: 3)
 
-### HIKE SCHEDULES
+## HIKE SCHEDULES
 
-# HikeSchedule.create!(trail_id: 1, user_id: 1, date: "06-01-2022")
-# HikeSchedule.create!(trail_id: 2, user_id: 2, date: "22-01-2022")
-# HikeSchedule.create!(trail_id: 3, user_id: 3, date: "27-01-2022")
+# HikeSchedule.create!(trail_id: 1, user_id: 1, date: "2023-06-01", status: "saved")
+# HikeSchedule.create!(trail_id: 2, user_id: 1, date: "2023-06-05", status: "saved")
+# HikeSchedule.create!(trail_id: 2, user_id: 2, date: "2023-12-01", status: "saved")
+# HikeSchedule.create!(trail_id: 3, user_id: 3, date: "2023-11-01", status: "saved")
 
 ### TRAILS
 # Trail.create!(name: "Caribou Lake via Arapaho Pass Trail", description: "Out and back", length: 8.8, difficulty: "Moderate", image_url: "public/5635E15A-E79F-43FA-A0F8-DE8FFE07F272_1_105_c.jpeg")

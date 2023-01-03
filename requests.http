@@ -1,5 +1,5 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NzI4NTYzMDR9.F5i01tU2YHDQCbMsY6BdY9rhPZZbO5AXyE4Bs2MKGnw
-@admin = 
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3LCJleHAiOjE2NzI4NTk2NDl9.-qgzREcZ04D0DfYjZMTYlvrdQBuxx7Qj4VNqxzrFa9M
+@admin = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3LCJleHAiOjE2NzI4NTk2NDl9.-qgzREcZ04D0DfYjZMTYlvrdQBuxx7Qj4VNqxzrFa9M
 
 #### USERS #### 
 ### Users index 
@@ -13,11 +13,11 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "Sara",
-  "email": "s@example.com",
+  "name": "Amanda",
+  "email": "a@example.com",
   "password": "password",
   "password_confirmation": "password",
-  "image_url": "https://i.imgur.com/SdEGONh.jpg"
+  "image_url": "NO PIC"
 }
 
 ### Users destroy
@@ -30,7 +30,7 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "g@example.com",
+  "email": "s@example.com",
   "password": "password"
 }
 
@@ -47,7 +47,7 @@ Content-Type: application/json
 Authorization: Bearer {{admin}}
 
 {
-  "name": "YET ANOTHER YETES",
+  "name": "TRAILSSSS",
   "description": "Loopy",
   "length": 74,
   "difficulty": "terrible",
@@ -55,7 +55,7 @@ Authorization: Bearer {{admin}}
 }
 
 ### Trails update
-PATCH http://localhost:3000/trails/5.json
+PATCH http://localhost:3000/trails/10.json
 Content-Type: application/json
 Authorization: Bearer {{admin}}
 
@@ -64,7 +64,7 @@ Authorization: Bearer {{admin}}
 }
 
 ### Trails destroy
-DELETE http://localhost:3000/trails/7.json
+DELETE http://localhost:3000/trails/8.json
 Authorization: Bearer {{admin}}
 
 #### FAST FACTS #### 
@@ -80,25 +80,25 @@ Content-Type: application/json
 Authorization: Bearer {{admin}}
 
 {
-  "general": "TESTY TEST",
-  "nearby_landmarks": "A MOUNTAIN",
-  "lake_info": "NO LAKES!",
-  "backcountry_zones": "NO ZONES!",
-  "ecological_zones": "Riparian",
-  "trail_id": 1
+  "general": "Lake Isabelle has been a reservoir for almost 100 years - dating to before IPW was designated a wilderness area. The lake is typically drained for agriculture each year in the late summer.",
+  "nearby_landmarks": "Isabelle Glacier; Airplane Gully, the resting place of a Douglas C-47 that went down in 1948; Pawnee Pass; and Shoshone, Apache, and Navajo peaks.",
+  "lake_info": "Elevation: 10,868 ft, Acres: 31.3, Depth: 40 ft, Fish: Cutthroat",
+  "backcountry_zones": "Four Lakes",
+  "ecological_zones": "Subalpine",
+  "trail_id": 5
 }
 
 ### Fast Facts update
-PATCH http://localhost:3000/fast_facts/4.json
+PATCH http://localhost:3000/fast_facts/5.json
 Content-Type: application/json
 Authorization: Bearer {{admin}}
 
 {
-  "lake_info": "NO LAKE!"
+  "lake_info": "LAKE!"
 }
 
 ### Fast Facts destroy
-DELETE http://localhost:3000/fast_facts/4.json
+DELETE http://localhost:3000/fast_facts/5.json
 Authorization: Bearer {{admin}}
 
 #### CONDIS #### 
@@ -114,12 +114,12 @@ Content-Type: application/json
 Authorization: Bearer {{admin}}
 
 {
-  "trail_condition": "TESTY TEST",
-  "temp": 0,
-  "forecast": "SUNS OUT GUNS OUT!",
+  "trail_condition": "Snowpacked",
+  "temp": 13,
+  "forecast": "Cold with high winds",
   "sunrise_time": 7,
-  "sunset_time": 9,
-  "trail_id": 1
+  "sunset_time": 5,
+  "trail_id": 5
 }
 
 ### Conditions update
@@ -128,12 +128,12 @@ Content-Type: application/json
 Authorization: Bearer {{admin}}
 
 {
-  "sunrise_time": 8,
-  "sunset_time": 4
+  "sunrise_time": 3,
+  "sunset_time": 9
 }
 
 ### Conditions destroy
-DELETE http://localhost:3000/conditions/6.json
+DELETE http://localhost:3000/conditions/7.json
 Authorization: Bearer {{admin}}
 
 
@@ -143,7 +143,7 @@ GET http://localhost:3000/hike_schedules.json
 Authorization: Bearer {{jwt}}
 
 ### Hike Schedule show
-GET http://localhost:3000/hike_schedules/5.json
+GET http://localhost:3000/hike_schedules/11.json
 Authorization: Bearer {{jwt}}
 
 ### Hike Schedule create
@@ -152,11 +152,11 @@ Content-Type: application/json
 Authorization: Bearer {{jwt}}
 
 {
-  "trail_id": 3,
-  "date": "2022-09-16"
+  "trail_id": 1,
+  "date": "2022-02-8"
 }
 
 ### Hike Schedule destroy
-DELETE http://localhost:3000/hike_schedules/4.json
+DELETE http://localhost:3000/hike_schedules/2.json
 Authorization: Bearer {{jwt}}
 
