@@ -1,5 +1,9 @@
 {
   id: @trail.id,
-  created_at: @trail.created_at,
-  updated_at: @trail.updated_at
+  name: @trail.name,
+  length: @trail.length,
+  difficulty: @trail.difficulty,
+  image_url: @trail.image_url,
+  conditions: @trail.conditions,
+  fast_facts: @trail.fast_facts
 }

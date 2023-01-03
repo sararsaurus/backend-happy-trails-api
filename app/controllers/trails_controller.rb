@@ -3,12 +3,12 @@ class TrailsController < ApplicationController
 
   def index
     @trails = Trail.all
-    render json: @trails.as_json
+    render :index
   end
 
   def show
     @trail = Trail.find_by(id: params[:id])
-    render json: @trail.as_json
+    render :show
   end
 
   def create

@@ -47,10 +47,10 @@ Content-Type: application/json
 Authorization: Bearer {{admin}}
 
 {
-  "name": "TESTY TEST",
+  "name": "YET ANOTHER YETES",
   "description": "Loopy",
-  "length": 3,
-  "difficulty": "Easy peasy",
+  "length": 74,
+  "difficulty": "terrible",
   "image_url": "NO PIC!"
 }
 
@@ -153,6 +153,6 @@ Authorization: Bearer {{jwt}}
 }
 
 ### Hike Schedule destroy
-DELETE http://localhost:3000/hike_schedules/6.json
+DELETE http://localhost:3000/hike_schedules/9.json
 Authorization: Bearer {{jwt}}
 
