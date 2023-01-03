@@ -1,5 +1,5 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NzI3OTU3ODF9.Tn2-QJJ9EualBD6NobvMGDMgllkChsMU1B7f7hx3vPU
-@admin = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo2LCJleHAiOjE2NzI3OTAxOTV9.ByIwE3nPY9x-bV7xDjhMe4RP88SOhPDGBJwE5FyAfL8
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NzI4NTUwODd9.Zdo6SEgFNR3bct75x2Soa_2G7fZq60ZuNXje0Mg9GcE
+@admin = 
 
 #### USERS #### 
 ### Users index 
@@ -13,15 +13,15 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "Callam the Clueless",
-  "email": "c@example.com",
+  "name": "Sara",
+  "email": "s@example.com",
   "password": "password",
   "password_confirmation": "password",
-  "image_url": "NO PIC!"
+  "image_url": "https://i.imgur.com/SdEGONh.jpg"
 }
 
 ### Users destroy
-DELETE http://localhost:3000/users/5.json
+DELETE http://localhost:3000/users/6.json
 Authorization: Bearer {{admin}}
 
 #### SESSIONS #### 
@@ -30,7 +30,7 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "g@example.com",
+  "email": "p@example.com",
   "password": "password"
 }
 
