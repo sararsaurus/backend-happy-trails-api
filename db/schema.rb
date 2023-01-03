@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_02_234820) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_03_004542) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -18,11 +18,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_02_234820) do
     t.string "trail_condition"
     t.integer "temp"
     t.string "forecast"
-    t.time "sunrise_time"
-    t.time "sunset_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "trail_id"
+    t.integer "sunrise_time"
+    t.integer "sunset_time"
   end
 
   create_table "fast_facts", force: :cascade do |t|

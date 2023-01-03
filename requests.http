@@ -100,3 +100,38 @@ Authorization: Bearer {{admin}}
 ### Fast Facts destroy
 DELETE http://localhost:3000/fast_facts/4.json
 Authorization: Bearer {{admin}}
+
+#### CONDIS #### 
+### Conditions index
+GET http://localhost:3000/conditions.json
+
+### Conditions show 
+GET http://localhost:3000/conditions/1.json
+
+### Conditions create
+POST http://localhost:3000/conditions.json
+Content-Type: application/json
+Authorization: Bearer {{admin}}
+
+{
+  "trail_condition": "TESTY TEST",
+  "temp": 0,
+  "forecast": "SUNS OUT GUNS OUT!",
+  "sunrise_time": 7,
+  "sunset_time": 9,
+  "trail_id": 1
+}
+
+### Conditions update
+PATCH http://localhost:3000/conditions/3.json
+Content-Type: application/json
+Authorization: Bearer {{admin}}
+
+{
+  "sunrise_time": 8,
+  "sunset_time": 4
+}
+
+### Conditions destroy
+DELETE http://localhost:3000/conditions/6.json
+Authorization: Bearer {{admin}}
