@@ -22,7 +22,7 @@ class TrailsController < ApplicationController
     if trail.save
       render json: trail.as_json
     else
-      render json: { errors: @product.errors.full_messages }, status: 418
+      render json: { errors: trail.errors.full_messages }, status: 418
     end
   end
 
@@ -36,7 +36,7 @@ class TrailsController < ApplicationController
     if trail.save
       render json: trail.as_json
     else
-      render json: { errors: @product.errors.full_messages }, status: 418
+      render json: { errors: trail.errors.full_messages }, status: 418
     end
   end
 

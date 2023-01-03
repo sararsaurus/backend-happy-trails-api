@@ -67,3 +67,36 @@ Authorization: Bearer {{admin}}
 DELETE http://localhost:3000/trails/7.json
 Authorization: Bearer {{admin}}
 
+#### FAST FACTS #### 
+### Fast Facts index
+GET http://localhost:3000/fast_facts.json
+
+### Fast Facts show 
+GET http://localhost:3000/fast_facts/1.json
+
+### Fast Facts create
+POST http://localhost:3000/fast_facts.json
+Content-Type: application/json
+Authorization: Bearer {{admin}}
+
+{
+  "general": "TESTY TEST",
+  "nearby_landmarks": "A MOUNTAIN",
+  "lake_info": "NO LAKES!",
+  "backcountry_zones": "NO ZONES!",
+  "ecological_zones": "Riparian",
+  "trail_id": 1
+}
+
+### Fast Facts update
+PATCH http://localhost:3000/fast_facts/4.json
+Content-Type: application/json
+Authorization: Bearer {{admin}}
+
+{
+  "lake_info": "NO LAKE!"
+}
+
+### Fast Facts destroy
+DELETE http://localhost:3000/fast_facts/4.json
+Authorization: Bearer {{admin}}

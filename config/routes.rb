@@ -3,5 +3,5 @@ Rails.application.routes.draw do
 
   post "/sessions" => "sessions#create"
 
-  resources :users, :trails, :conditions, :fastfacts
+  resources :users, :trails, :conditions, :fast_facts
 end
