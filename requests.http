@@ -1,5 +1,5 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3LCJleHAiOjE2NzI4NTk2NDl9.-qgzREcZ04D0DfYjZMTYlvrdQBuxx7Qj4VNqxzrFa9M
-@admin = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3LCJleHAiOjE2NzI4NTk2NDl9.-qgzREcZ04D0DfYjZMTYlvrdQBuxx7Qj4VNqxzrFa9M
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NzI5NTAyOTR9.qd9cVnZYKL7_rV_caIuUWKqG4Xt-R2ueecD18W9ntfc
+@admin = 
 
 #### USERS #### 
 ### Users index 
@@ -21,7 +21,7 @@ Content-Type: application/json
 }
 
 ### Users destroy
-DELETE http://localhost:3000/users/6.json
+DELETE http://localhost:3000/users/8.json
 Authorization: Bearer {{admin}}
 
 #### SESSIONS #### 
@@ -30,7 +30,7 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "s@example.com",
+  "email": "p@example.com",
   "password": "password"
 }
 
@@ -143,7 +143,7 @@ GET http://localhost:3000/hike_schedules.json
 Authorization: Bearer {{jwt}}
 
 ### Hike Schedule show
-GET http://localhost:3000/hike_schedules/11.json
+GET http://localhost:3000/hike_schedules/17.json
 Authorization: Bearer {{jwt}}
 
 ### Hike Schedule create
@@ -152,11 +152,20 @@ Content-Type: application/json
 Authorization: Bearer {{jwt}}
 
 {
-  "trail_id": 1,
+  "trail_id": 3,
   "date": "2022-02-8"
 }
 
+### Hike Schedule update
+PATCH http://localhost:3000/hike_schedules/27.json
+Content-Type: application/json
+Authorization: Bearer {{jwt}}
+
+{
+  "date": "2022-04-2"
+}
+
 ### Hike Schedule destroy
-DELETE http://localhost:3000/hike_schedules/2.json
+DELETE http://localhost:3000/hike_schedules/25.json
 Authorization: Bearer {{jwt}}
 

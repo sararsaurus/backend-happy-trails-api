@@ -6,7 +6,6 @@ class HikeSchedulesController < ApplicationController
 
   def show
     @hike_schedules = current_user.hike_schedules.find_by(id: params[:id])
-    # render json: @hike_schedules.as_json
     render :show
   end
 
@@ -17,6 +16,17 @@ class HikeSchedulesController < ApplicationController
       date: params[:date],
       status: "saved",
     )
+    if hike_schedule.save
+      render json: hike_schedule.as_json
+    else
+      render json: { errors: hike_schedule.errors.full_messages }, status: 418
+    end
+  end
+
+  def update
+    hike_schedule = current_user.hike_schedules.find_by(id: params[:id])
+    hike_schedule.trail_id = params["trail_id"] || hike_schedule.trail_id
+    hike_schedule.date = params["date"] || hike_schedule.date
     if hike_schedule.save
       render json: hike_schedule.as_json
     else
