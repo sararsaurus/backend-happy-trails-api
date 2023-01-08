@@ -13,8 +13,6 @@ class ForecastsController < ApplicationController
     ### WEATHER
     weather = HTTP.get("https://api.weather.gov/gridpoints/BOU/41,77/forecast").parse(:json)
 
-    weather = ["properties"]["periods"]
-
     today_temp = weather["properties"]["periods"][0]["temperature"]
     today_wind_speed = weather["properties"]["periods"][0]["windSpeed"]
     today_wind_direction = weather["properties"]["periods"][0]["windDirection"]

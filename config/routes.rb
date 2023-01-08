@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root "trails#index"
+  # root "trails#index"
+
+  get "/forecasts" => "forecasts#index"
 
   post "/sessions" => "sessions#create"
 
