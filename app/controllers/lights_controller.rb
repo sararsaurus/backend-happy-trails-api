@@ -10,6 +10,6 @@ class LightsController < ApplicationController
     last_light = light["results"]["last_light"]
     golden_hour = light["results"]["golden_hour"]
 
-    render json: light
+    render json: light["results"]
   end
 end
