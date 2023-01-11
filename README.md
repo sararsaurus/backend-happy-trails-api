@@ -4,7 +4,7 @@
 
 Welcome to the backend for SomeTrails!
 
-SomeTrails is a one-stop prep shop for wilderness patrol volunteers. The backend's schema features a join table for scheduled patrols, and it primarily serves to amalgamate various streams of information that translate on the frontend into a user-friendly compilation.
+SomeTrails is a one-stop prep shop for wilderness patrol volunteers. The backend's schema features a join table for scheduled patrols, and it primarily serves to amalgamate various streams of information that translate on the frontend into a user-friendly compilation. Its authentication restricts what different visitors to the site can see and do.
 
 The backend is designed to accomodate my growth as a developer: it includes some hardcoded data but is structured so that it can easily be replaced by more sophisticated sources as I learn.
 
