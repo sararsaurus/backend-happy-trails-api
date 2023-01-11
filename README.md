@@ -8,15 +8,13 @@ SomeTrails is a one-stop prep shop for wilderness patrol volunteers. The backend
 
 The backend is designed to accomodate my growth as a developer: it includes some hardcoded data but is structured so that it can easily be replaced by more sophisticated sources as I learn.
 
-For example, I initally hardcoded the weather and daylight information, and have since replaced and amended those controllers to call back to separate external APIs.
+For example, I initally hardcoded the weather and daylight information, and I've since replaced and amended those controllers to call back to separate external APIs.
 
 ## Libraries & APIs
 
-Rails (backend),
-React (frontend),
-Mapbox GL JS (frontend)
-[SunriseSunset.io](https://sunrisesunset.io/api/)
-[NWS API](https://www.weather.gov/documentation/services-web-api)
+- Rails
+- [SunriseSunset.io](https://sunrisesunset.io/api/)
+- [NWS API](https://www.weather.gov/documentation/services-web-api)
 
 ## Installation & Usage
 
