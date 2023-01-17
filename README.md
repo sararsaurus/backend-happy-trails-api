@@ -4,7 +4,7 @@
 
 Welcome to the backend for SomeTrails!
 
-SomeTrails is a one-stop prep shop for wilderness patrol volunteers. The backend's schema features a join table for scheduled patrols, and it primarily serves to amalgamate various streams of information that translate on the frontend into a user-friendly compilation. Its authentication restricts what different visitors to the site can see and do.
+SomeTrails is a one-stop prep shop for wilderness patrol volunteers. The backend's schema features a join table for scheduled patrols, and it primarily serves to amalgamate various streams of information that translate into a user-friendly compilation on the frontend. Its authentication restricts what different visitors to the site can see and do.
 
 The backend is designed to accomodate my growth as a developer: it includes some hardcoded data but is structured so that it can easily be replaced by more sophisticated sources as I learn. For example, I initally hardcoded the weather and daylight information, and I've since replaced that data and amended those controllers to call back to separate external APIs.
 
@@ -19,7 +19,7 @@ This project is locally hosted, and the backend pairs with [this frontend](https
 
 ## Installation
 
-Please note that the JWT authentication will require further information from me to make it work. If you have that info...
+Please note that the JWT authentication will require further information from me to make it work. If you have that info, then:
 
 ```bash
 bundle install
