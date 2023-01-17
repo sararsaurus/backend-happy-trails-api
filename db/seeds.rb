@@ -27,7 +27,6 @@ FastFact.create!(general: "At 13,397 ft, it's one of IPW's seven 13ers. Nearby N
 FastFact.create!(general: "Lone Eagle Peak's summit is at 11,946 ft.", nearby_landmarks: "The Chessmen", lake_info: "Elevation: 10,280 ft, Acres: 24.8, Depth: 78 ft, Fish: Brook, cutthroat.", backcountry_zones: "Cascade Creek, Crater Lake", ecological_zones: "Montane, Subalpine", trail_id: 3)
 
 # HIKE SCHEDULES
-
 HikeSchedule.create!(trail_id: 1, user_id: 1, date: "2023-06-01", status: "saved")
 HikeSchedule.create!(trail_id: 2, user_id: 1, date: "2023-06-05", status: "saved")
 HikeSchedule.create!(trail_id: 2, user_id: 2, date: "2023-12-01", status: "saved")
