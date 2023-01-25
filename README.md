@@ -10,6 +10,8 @@ The backend is designed to accomodate my growth as a developer: it includes some
 
 This project is locally hosted, and the backend pairs with [this frontend](https://github.com/sararsaurus/frontend-happy-trails).
 
+Click [here](https://youtu.be/5GF2niIeHfY) for a quick demo!
+
 ## Dependencies, frameworks, libraries & APIs
 
 - Ruby 3.1.2
