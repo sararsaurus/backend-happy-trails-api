@@ -12,8 +12,9 @@ This project is locally hosted, and the backend pairs with [this frontend](https
 
 Click [here](https://youtu.be/5GF2niIeHfY) for a quick demo!
 
-## Dependencies, frameworks, libraries & APIs
+## Dependencies, frameworks, libraries, APIs & code editor
 
+- Built using [Visual Studio Code](https://code.visualstudio.com/)
 - Ruby 3.1.2
 - Rails 7.0.4
 - [SunriseSunset.io](https://sunrisesunset.io/api/)
