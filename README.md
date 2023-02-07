@@ -10,7 +10,7 @@ The backend is designed to accomodate my growth as a developer: it includes some
 
 This project is locally hosted, and the backend pairs with [this frontend](https://github.com/sararsaurus/frontend-happy-trails).
 
-Click [here](https://youtu.be/5GF2niIeHfY) for a quick demo!
+Click [here](https://youtu.be/g7HeW_GGq2s) for a quick demo!
 
 ## Dependencies, frameworks, libraries, APIs & code editor
 
@@ -35,7 +35,7 @@ rails db:create db:migrate db:seed
 rails server
 ```
 
-You can test web requests as documented in the `requests.http` file.
+You can test web requests as documented in the `requests.http` file or hook it up to the corresponding frontend.
 
 ## Roadmap
 
