@@ -8,9 +8,7 @@ SomeTrails is a one-stop prep shop for wilderness patrol volunteers. The backend
 
 The backend is designed to accomodate my growth as a developer: it includes some hardcoded data but is structured so that it can easily be replaced by more sophisticated sources as I learn. For example, I initally hardcoded the weather and daylight information, and I've since replaced that data and amended those controllers to call back to separate external APIs.
 
-This project is locally hosted, and the backend pairs with [this frontend](https://github.com/sararsaurus/frontend-happy-trails).
-
-Click [here](https://youtu.be/g7HeW_GGq2s) for a quick demo!
+This project is locally hosted, and the backend pairs with [this frontend](https://github.com/sararsaurus/frontend-happy-trails). Demos are on that page!
 
 ## Dependencies, frameworks, libraries, APIs & code editor
 
